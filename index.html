@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <title>welcome to tavani \(^o^)/</title>
+    <meta charset="utf-8">
+    <!--글자깨짐 방지-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--IE 가장 최근 버전으로 표시-->
+
+    <link href="./style.css" rel="stylesheet" type="text/css">
+    <style>
+        .clearfix::after {
+            clear: both;
+            content: "";
+            display: block;
+        }
+
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        li {
+            list-style: none;
+        }
+
+        .a0 {
+            margin: auto;
+            width: 1320px;
+            height: 75px;
+            position: absolute;
+            /* height: 500px; */
+            width: 200px;
+            /* top: 50px; */
+            left: 710px;
+            z-index: 1;
+
+
+        }
+
+        .a0 img {
+            float: left;
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .a1 {
+            /* float: right; */
+            position: relative;
+            /* height: 500px; */
+            /* width: 200px; */
+            /* top: 50px; */
+            /* left: 50px; */
+            /* z-index: 1; */
+        }
+
+        .a0 ul li {
+            float: left;
+            margin: 10px;
+        }
+
+        .dropmenu {
+            border: none;
+            border: 0px;
+            margin: 0px;
+            padding: 0px;
+            font: "sans-serif";
+            font-size: 18px;
+        }
+
+        .dropmenu ul {
+            /* background: rgb(96, 186, 144); */
+            height: 50px;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .dropmenu li {
+            float: left;
+            padding: 0px;
+        }
+
+        .dropmenu li a {
+            /* background: rgb(70, 65, 147); */
+            color: #fff;
+            display: block;
+            line-height: 50px;
+            margin: 0px;
+            padding: 0px 25px;
+            text-align: center;
+            text-decoration: none;
+        }
+
+        .dropmenu li a:hover,
+        .dropmenu ul li:hover a {
+            background: rgb(31, 31, 31);
+            color: #FFFFFF;
+            text-decoration: none;
+        }
+
+        .dropmenu li ul {
+            background: red;
+            display: none;
+            height: auto;
+            border: 0px;
+            position: absolute;
+            width: 200px;
+            z-index: 200;
+            /*top:1em;
+/*left:0;*/
+        }
+
+        .dropmenu li:hover ul {
+            display: block;
+        }
+
+        .dropmenu li li {
+            background: red;
+            display: block;
+            float: none;
+            margin: 0px;
+            padding: 0px;
+            width: 200px;
+        }
+
+        .dropmenu li:hover li a {
+            background: none;
+        }
+
+        .dropmenu li ul a {
+            display: block;
+            height: 80px;
+            font-size: 14px;
+            margin: 0px;
+            padding: 0px 10px 0px 15px;
+            text-align: left;
+        }
+
+        .dropmenu li ul a:hover,
+        .dropmenu li ul li:hover a {
+            background: rgb(171, 171, 171);
+            border: 0px;
+            color: #ffffff;
+            text-decoration: none;
+        }
+
+        .dropmenu p {
+            clear: left;
+        }
+
+        .visual img {
+            width: 250px;
+            position: relative;
+            top: 220px;
+            opacity: 0.8;
+        }
+
+        .text_wrap span {
+            font-weight: 1100;
+            text-shadow: 2px 2px 2px black;
+        }
+
+        body {
+            /* height: 1080px; */
+            font-family: 'SUIT-Regular';
+            font-weight: 800;
+        }
+
+        $('html, body').css({
+            'overflow': 'hidden', 'height': '100%'
+        });
+
+        $('#element').on('scroll touchmove mousewheel', function(event) {
+                event.preventDefault();
+                event.stopPropagation();
+                return false;
+            });
+
+        @font-face {
+            font-family: 'SUIT-Regular';
+            src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_suit@1.0/SUIT-Regular.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+        }
+
+        .visual_view {
+            height: 1080px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div class="a0"><a href="./tavani_main.html"><img src="./pics/logo3.png" alt=""></a>
+
+            <!-- <div class="dropmenu a1 clearfix">
+                <ul>
+                    <li><a href="./pics/a11.PNG" id="current">국내여행</a>
+                        <ul>
+                            <li><a href="#">패키지 여행</a></li>
+                            <li><a href="#">숙소예약</a></li>
+                            <li><a href="#">차량렌트</a></li>
+                            <li><a href="#">테마여행</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="./pics/b11.PNG" id="current">해외여행</a>
+                        <ul>
+                            <li><a href="#">이번주 특가</a></li>
+                            <li><a href="#">패키지 여행</a></li>
+                            <li><a href="#">크루즈, 허니문</a></li>
+                            <li><a href="#">Md's Choice</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" id="current">고객센터</a>
+                        <ul>
+                            <li><a href="#">요금확인/이용안내</a></li>
+                            <li><a href="#">예약확인</a></li>
+                            <li><a href="#">문의하기</a></li>
+
+                        </ul>
+                    </li>
+                    <li><a href="#" id="current">해외여행</a>
+                        <ul>
+                            <li><a href="#">타바니 About</a></li>
+                            <li><a href="#">신념 및 가치</a></li>
+                            <li><a href="#">브랜드 Identity</a></li>
+                            <li><a href="#">본사 위치</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div> -->
+
+        </div>
+    </div>
+    <!-- 헤더f -->
+
+    <div id="contents" class="mainpage">
+        <div class="main_visual main_visual_prd">
+            <div class="mainviewcont main_visual_fixed">
+                <div class="visual_view">
+                    <span class="viewbg_wrap" style="background-image:url(./pics/road-71267522.jpg)">
+                        <span class="viewbg" style="background-image:url(./pics/road-7126752.jpg)"></span>
+                    </span>
+                    <span class="viewbg_wrap" style="background-image:url(./pics/airplane-37026762.jpg)">
+                        <span class="viewbg" style="background-image:url(./pics/airplane-3702676.jpg)"></span>
+                    </span>
+                    <span class="viewbg_wrap" style="background-image:url(./pics/call-center-62902782.jpg)">
+                        <span class="viewbg" style="background-image:url(./pics/call-center-6290278.jpg)"></span>
+                    </span>
+                    <span class="viewbg_wrap" style="background-image:url(./pics/635982262.jpg)">
+                        <span class="viewbg" style="background-image:url(./pics/63598226.jpg)"></span>
+                    </span>
+                </div>
+                <div class="visual">
+                    <a href="./tavani_domestic.html" class="inlink">
+                        <div class="text_wrap">
+                            <span class="title">국내여행</span>
+                            <span class="desc">어디로 tavani</span>
+                            <p><img src="./pics/family-car.png" alt=""></p>
+                        </div>
+                    </a>
+                    <a href="./tavani_international.html" class="inlink">
+                        <div class="text_wrap">
+                            <span class="title">해외여행</span>
+                            <span class="desc">어디까지 tavani</span>
+                            <p><img src="./pics/passenger.png" alt=""></p>
+                        </div>
+                    </a>
+                    <a href="#" class="inlink">
+                        <div class="text_wrap">
+                            <span class="title">고객센터</span>
+                            <span class="desc">무엇을 도와드릴까요?</span>
+                            <p><img src="./pics/customer-service-agent.png" alt=""></p>
+                        </div>
+
+                    </a>
+                    <a href="#" class="inlink">
+                        <div class="text_wrap">
+                            <span class="title">tavani About</span>
+                            <span class="desc">타바니는</span>
+                            <p><img src="./pics/tavaniearth.png" alt=""></p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <!--스크립트 연결-->
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+        integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <script src='./jquery-ui.min.js'></script>
+    <script src="./banner.js"></script>
+
+</body>
+
+</html>
